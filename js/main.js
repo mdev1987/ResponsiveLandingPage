@@ -1,3 +1,4 @@
+const navbar = document.querySelector('.navbar');
 const pic = document.querySelector('#main-shoe');
 const cyan = document.querySelector('.cyan');
 const purple = document.querySelector('.purple');
@@ -6,6 +7,16 @@ const red = document.querySelector('.red');
 const green = document.querySelector('.green');
 const pink = document.querySelector('.pink');
 const colors = document.querySelectorAll('.color');
+
+// resize navbar on scroll
+window.onscroll = () => {
+    this.scrollY > 20 ? navbar.classList.add('sticky') : navbar.classList.remove('sticky');
+}
+
+window.onload = ()=> {
+    this.scrollY > 20 ? navbar.classList.add('sticky') : navbar.classList.remove('sticky');
+}
+
 
 // store product info in object
 const info = {

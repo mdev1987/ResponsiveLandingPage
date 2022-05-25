@@ -223,6 +223,13 @@ img {
     width: 100%;
     z-index: 999;
     padding: 25px;
+    transition: all 0.5s ease;
+}
+
+.navbar.sticky {
+    padding: 10px 25px;
+    box-shadow: var(--shadow-black-100);
+    background-color: var(--main-color);
 }
 
 .navbar .container {
